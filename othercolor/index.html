@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다른 색깔 찾기</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header" id="header">
+            <div class="timer" id="timer"></div>
+            <div class="stage" id="stage"></div>
+            <div class="reset" id="reset"></div>
+        </div>
+    
+        <div class="palette" id="palette"> </div>   
+    </div>
+    <div id="container">
+        
+        <div id="lorem-ipsum"></div>
+    </div>
+    <div id="modal" class="modal-overlay">
+        <div class="modal-window">
+            <div class="title">
+                <h2>게임종료!</h2>
+            </div>
+            <div class="close-area">X</div>
+            <div class="content">
+                <div class="stage_score" id="stage_score"></div>
+                <p>한번더 도전해보실까요?</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_yes" class="modal_yes">
+        <div class="modal-window">
+            <div class="title">
+                <h2>정답입니다!</h2>
+                <p>아래의 확인을 누르시면<br> 다음 stage가 진행됩니다</p>
+                <button id="yes_close">확인</button>
+            </div>
+        </div>
+    </div>
+    <div id="modal_success" class="modal_success">
+        <div class="modal-window">
+            <div class="title">
+                <h2>성공하셨습니다!</h2>
+                <p>축하드립니다!</p>
+                <button id="restart">다시하기</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js">
+    </script> 
+</body>
+</html>
